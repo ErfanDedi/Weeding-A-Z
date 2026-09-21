@@ -2633,7 +2633,7 @@ body {
 
 /* event */
 .bg-event {
-  background-image: url("../images/bg-event.jpg");
+  background-image: url("../images/baground.webp");
   background-size: cover;
   overflow-x: hidden;
 }
@@ -3216,7 +3216,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(../images/popup.JPG);
+  background-image: url(../images/gallery/foto7.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -3584,6 +3584,7 @@ footer .credit h5 {
     height: 25rem;
     object-fit: cover;
     object-position: center;
+    
   }
 
   .rsvp .row .message {
