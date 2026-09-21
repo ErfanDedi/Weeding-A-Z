@@ -18,6 +18,200 @@
 }
 /* Start Custom Fonts CSS */
 
+
+/* =====================================================
+   LOADING SCREEN
+===================================================== */
+
+#page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999999;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+
+/* Saat loading selesai */
+#page-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* Konten */
+.loader-content {
+    width: 90%;
+    max-width: 350px;
+
+    text-align: center;
+
+    color: #d4af37;
+}
+
+
+/* Ornamen */
+.loader-ornament {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+    animation: loaderRotate 2s linear infinite;
+}
+
+
+/* Judul */
+.loader-content h2 {
+    margin: 0;
+
+    font-family: "Explora", serif;
+
+    font-size: 30px;
+
+    font-weight: 400;
+}
+
+
+/* Nama */
+.loader-names {
+    margin-top: 12px;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+}
+
+.loader-names span {
+    color: #d4af37;
+
+    margin: 0 5px;
+}
+
+
+/* Garis */
+.loader-line {
+    width: 160px;
+
+    height: 1px;
+
+    margin: 25px auto;
+
+    background: rgba(212, 175, 55, 0.25);
+
+    overflow: hidden;
+}
+
+.loader-line span {
+    display: block;
+
+    width: 60px;
+
+    height: 100%;
+
+    background: #d4af37;
+
+    animation: loaderLine 1.5s infinite ease-in-out;
+}
+
+
+/* Spinner */
+.loader-spinner {
+    width: 30px;
+    height: 30px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(212, 175, 55, 0.2);
+
+    border-top-color: #d4af37;
+
+    animation: loaderSpin 0.8s linear infinite;
+}
+
+
+/* Text */
+.loader-content p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes loaderSpin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes loaderRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes loaderLine {
+
+    0% {
+        transform: translateX(-70px);
+    }
+
+    50% {
+        transform: translateX(170px);
+    }
+
+    100% {
+        transform: translateX(170px);
+    }
+
+}
+
 /* MY CSS VARIABLE */
 :root {
   --explora: "Explora", cursive;

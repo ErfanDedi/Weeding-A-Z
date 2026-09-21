@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="The Wedding OF : AZIZ & TARISYA">
-    <meta property="og:description" content="....,....,...,...">
-    <!-- <meta property="og:image" content="https://i.ibb.co/p2xrqXN/Utsman.png">
-    <meta property="og:url" content="https://masreyxlvi.github.io/Utsman-Yani/"> -->
+    <meta property="og:description" content="">
     <meta property="og:type" content="website">
 
     <!-- my fonts -->
@@ -22,7 +20,6 @@
     <!-- Lightbox -->
     <link rel="stylesheet" href="css/lightbox.css">
     <title>The Wedding Of : AZIZ & TARISYA</title>
-    <!-- <link rel="shortcut icon" href="images/logo.png" /> -->
     <!-- toastr -->
     <link rel="stylesheet" href="assets/toastr/toastr.min.css">
     <!-- sweaatalert -->
@@ -32,6 +29,28 @@
   </head>
   
   <body>
+
+<!-- LOADING SCREEN -->
+<div id="page-loader">
+    <div class="loader-content">
+        <div class="loader-ornament">✦</div>
+
+        <h2>The Wedding Of</h2>
+
+        <div class="loader-names">
+            TARISYA <span>&</span> AZIZ
+        </div>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+        <div class="loader-spinner"></div>
+
+        <p>Menyiapkan undangan...</p>
+    </div>
+</div>
+
 <div id="myPopup" class="popup">
   <div class="popup-container">
     <div class="popup-content">
@@ -86,12 +105,7 @@
     </div>
   </div>
 </div>
-    
-    <!-- popup end -->
-    <!-- my Logo  -->
-    <!-- Elemen logo -->
       <div id="logo">
-        <!-- <img src="images/logo.png" alt="Logo" /> -->
       </div>
     <!-- hero section start -->
     <section class="hero" id="home">
@@ -154,7 +168,7 @@
     <section class="quran" id="quran">
       <div class="row">
         <div class="quran-img" data-aos="zoom-in" data-aos-duration="2000">
-          <img src="images/quran.png" alt="quran" />
+          <img src="images/quran.webp" alt="quran" />
         </div>
         <div class="content">
           <h3 data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000">QS Ar-rum 21</h3>
@@ -173,7 +187,7 @@
         <div class="about-img" data-aos="zoom-in-up" data-aos-duration="1500">
             <div class="photo-frame">
                 <img
-                    src="images/hero/mempelaipria.png"
+                    src="images/hero/mempelaipria.webp"
                     alt="Mempelai Pria"
                 >
             </div>
@@ -338,7 +352,7 @@
         >
             <div class="photo-frame">
                 <img
-                    src="images/hero/mempelaiwanita.jpeg"
+                    src="images/gallery/foto1.jpeg"
                     alt="Mempelai Wanita"
                 >
             </div>
@@ -520,7 +534,7 @@
                 <div class="lokasi">
                   <h5>Lokasi Acara</h5>
                   <h5></h5>
-                  <p>Ds.........????, RT/RW 00/00, Kecamatan Sawahan, Kabupaten Madiun</p>
+                  <p>Ds. Golan, Rt 01 / Rw 01, Kecamatan Sawahan, Kabupaten Madiun, Jawa Timur</p>
                   <a href="https://maps.app.goo.gl/xqVfcMwuaPLgPDEY7" target="_blank" class="cbt">Google Maps</a>
                </div>
               </div>
@@ -572,12 +586,6 @@
         <a class="rekening" id="show-cards"> Kilk Disini <i data-feather="arrow-right" style="vertical-align: middle"></i></a>
       </div>
       <div class="card-container" id="card-container">
-        <div class="card">
-          <h3>......?</h3>
-          <h5 id="textSalin">00000000000</h5>
-          <p id="yani">AZIZ</p>
-          <button class="salin" id="show-cards" onclick="noUtsman()"> <i data-feather="copy" style="vertical-align: middle"></i> Salin No.Dana </button>
-        </div>
         <div class="card">
           <h3>MANDIRI</h3>
           <h5 id="textSalin2">1710010771130</h5>
@@ -698,6 +706,8 @@
     <script src="assets/Arctext/js/jquery.arctext.js"></script>
     <!-- sweetalert -->
     <script src="assets/sweetalert2/sweetalert2.all.min.js"></script>
+    <!-- Loader Js -->
+     <script src="js/loader.js"></script>
 
 
     <script src="js/database.js"></script>
@@ -718,9 +728,6 @@
         });
       </script>
       
-
-
-
      
   </body>
 </html>
